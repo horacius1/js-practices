@@ -5,7 +5,7 @@ function getDivisors(number)
     throw new TypeError (" parameter type is not a Number")
 } 
 
-else if (number<0) {
+else if (number<=0) {
     throw new  RangeError (" parameter can't be less then 1")
 }
 else
@@ -15,7 +15,7 @@ else
         if(number > 1){
           for(i=0;i<=number/2;i++){
             if(number % i === 0){
-              console.log(i,number/i);
+              console.log(number/i);
             }
           }
         }
