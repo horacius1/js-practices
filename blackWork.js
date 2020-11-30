@@ -1,2 +1,7 @@
-function f1= function f2() {}
-console.log(f1.name==='f2')
+'use strict';
+var person ={
+    name:'piir'
+};
+Object.preventExtensions(person);
+person.age=21
+console.log(person.obj.age)
