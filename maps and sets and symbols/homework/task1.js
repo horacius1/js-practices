@@ -18,7 +18,7 @@ class DB {
   
     read(id){
 
-            if(typeof id !== 'symbol'){
+            if(typeof id !== 'string'){
                 throw new error ('type of id is invalid ')
             }
             else if (is=== null){
@@ -38,7 +38,7 @@ class DB {
     }
   
     update(id, updatedValues){
-      if (typeof id !=='symbol'){
+      if (typeof id !=='string'){
           throw new error('id is not a string')
       }
       else if (updatedValues instanceof Object === false){
