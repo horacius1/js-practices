@@ -53,5 +53,5 @@ set.add('5');
 console.log(set);
 
 
-for (let item of set )
+
 
