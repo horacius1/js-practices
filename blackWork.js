@@ -1,7 +1,4 @@
-'use strict';
-var person ={
-    name:'piir'
-};
-Object.preventExtensions(person);
-person.age=21
-console.log(person.obj.age)
+function r(){
+
+}
+console.log(r.prototype.constructor===r)

@@ -43,3 +43,15 @@ class Validator {
   console.log(validator.isDomain('jshtml.net'));
   console.log(validator.isDate('12/05/2020'));
   console.log(validator.isPhone('+995599518681')); // it can be format of your country
+
+
+const set = new Set();
+
+set.add(5);
+set.add('5');
+
+console.log(set);
+
+
+for (let item of set )
+

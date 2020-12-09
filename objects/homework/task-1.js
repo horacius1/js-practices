@@ -48,16 +48,6 @@
 
 // Object.create(proto, [propertiesObject])
 
-const source = {
-    type: null,
-    n: 2
-};
 
-const receiver = {
-    n: 1,
-    ...source
-};
 
-console.log(receiver);
-
-    
+console.log(Symbol.for('a'))

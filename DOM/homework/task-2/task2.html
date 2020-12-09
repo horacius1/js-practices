@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <button 
+        onclick="display_random_image();">next img</button> 
+        </div>
+    <script>
+       function display_random_image() 
+{
+     var images = [{
+        src: "https://cdn.vox-cdn.com/thumbor/GvUfkCKIz-8kOSIBYPFIc3hWuW0=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20053035/Cyberpunk_2077_screen_10.jpg"
+       
+    }, {
+        src: "https://cdn.vox-cdn.com/thumbor/GvUfkCKIz-8kOSIBYPFIc3hWuW0=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20053035/Cyberpunk_2077_screen_10.jpg"
+     
+    }, {
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwg-FppLm22DykY_ufzVXZQjUups7AkAHcQg&usqp=CAU"
+       
+    }, {
+        src: "https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-29-11-00/cyberpunk-2077-delay-necessary-for-last-minute-work-on-current-consoles-dev-says-1603969211392.jpg/EG11/resize/1200x-1/cyberpunk-2077-delay-necessary-for-last-minute-work-on-current-consoles-dev-says-1603969211392.jpg"
+       
+    }, {
+        src: "https://pbs.twimg.com/profile_images/1107773098672226305/6eQCzTDg_400x400.jpg"
+       
+    }];
+    
+    var arr = [];
+    for (var i = 0, j = images.length; i < j; i++) {
+        arr[i] = new Image();
+        arr[i].src = images[i].src;
+        
+    }
+   
+
+  function getRandomInt(min,max) 
+    {
+   
+    
+leo = Math.floor(Math.random() * (max - min + 1)) + min;
+    return arr[leo];
+    }  
+
+
+  
+var newImage = getRandomInt(0, arr.length - 1);
+ 
+
+var images = document.getElementsByTagName('img');
+for (var i = 0; i < images.length; i++) {
+    images[0].parentNode.removeChild(images[0]);
+}
+
+document.body.appendChild(newImage);
+
+}
+    </script>
+</body>
+</html>
